@@ -35,7 +35,7 @@ function displayShowGif() {
                 .attr("data-still", results[j].images.original_still.url)
                 .attr("data-animate", results[j].images.original.url)
                 .attr("data-state", "still")
-                .attr("class", ".gif")
+                .attr("class", "gif")
                 .addClass("mx-auto")
                 .addClass("my-auto")
                 .addClass("col-md-4")
