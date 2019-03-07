@@ -27,7 +27,8 @@ function displayShowGif() {
         // loop to go through and create and append the GIF
         for (var j = 0; j < 10; j++) {
             // assign a variable to the GIF display area
-            var gifDiv = $("#gif-display");
+            var gifDiv = $("<div>")
+            .css("max-width", "350px");
 
             // make a variable to display an image tag
             var gif = $("<img>")
@@ -38,8 +39,12 @@ function displayShowGif() {
                 .attr("class", "gif")
                 .addClass("mx-auto")
                 .addClass("my-auto")
-                .addClass("col-md-4")
+                .addClass("col-md-3")
             gifDiv.append(gif);
+            var rating = results[j].rating;
+            var ratingP = $("<p>").text("Rating: " + rating);
+            gifDiv.append(ratingP);
+            $("#gif-display").append(gifDiv);
         }
     })
 };
@@ -87,6 +92,8 @@ function displayButtons() {
     for (var i = 0; i < tvShowArray.length; i++) {
         var $showbutton = $("<button>");
         $showbutton.addClass("show-btn");
+        $showbutton.addClass("btn");
+        $showbutton.addClass("btn-primary");
         $showbutton.attr("show-name", tvShowArray[i]);
         $showbutton.text(tvShowArray[i]);
         $("#show-buttons").append($showbutton);

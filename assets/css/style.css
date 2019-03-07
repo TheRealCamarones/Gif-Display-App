@@ -1,0 +1,13 @@
+body {
+    background: #777;
+}
+
+p {
+    color: #fff;
+    max-width: 350px;
+}
+
+.gif {
+    padding: 5px;
+    max-width: 350px;
+}
