@@ -28,7 +28,6 @@ function displayShowGif() {
         for (var j = 0; j < 10; j++) {
             // assign a variable to the GIF display area
             var gifDiv = $("<div>")
-            .css("max-width", "350px");
 
             // make a variable to display an image tag
             var gif = $("<img>")
@@ -39,7 +38,7 @@ function displayShowGif() {
                 .attr("class", "gif")
                 .addClass("mx-auto")
                 .addClass("my-auto")
-                .addClass("col-md-3")
+                .addClass("col-md-4")
             gifDiv.append(gif);
             var rating = results[j].rating;
             var ratingP = $("<p>").text("Rating: " + rating);

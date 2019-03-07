@@ -10,4 +10,5 @@ p {
 .gif {
     padding: 5px;
     max-width: 350px;
+    max-height: 350px;
 }
